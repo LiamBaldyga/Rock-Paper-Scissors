@@ -33,7 +33,7 @@ function playRound(playerSelection, computerSelection) {
                 return "You Lose! Rock beats Scissors";
                 break;
             case "paper":
-                return "You Win! Scissors beats Rock";
+                return "You Win! Scissors beats Paper";
                 break;
         }
     }
