@@ -54,6 +54,13 @@ function game(playerSelection) {
 
     document.querySelector('.score-label').textContent = roundWin;
     document.querySelector('.score-num').textContent = `${playerWins} - ${computerWins}`;
+
+    if (playerWins === 5) {
+        document.querySelector('.score-label').textContent = "Game over. You Win!";
+    }
+    else if (computerWins === 5) {
+        document.querySelector('.score-label').textContent = "Game over. You Lose!";
+    }
     }
     else if (playerWins === 5) {
         document.querySelector('.score-label').textContent = "Game over. You Win!";
